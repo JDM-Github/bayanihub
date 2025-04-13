@@ -20,16 +20,16 @@
 	}
 </script>
 
-<div class="bg-white p-5 md:p-6 rounded-lg shadow-sm border border-gray-200" id="progress">
-	<h2 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4">Proof of Progress</h2>
+<div class="bg-yellowish3 p-5 md:p-6 rounded-lg shadow-sm border border-gray-200" id="progress">
+	<h2 class="text-xl md:text-2xl font-bold text-yellowish mb-4">Proof of Progress</h2>
 
 	<div class="space-y-6">
 
 		<div class="space-y-2">
 			<div class="flex justify-between items-center">
-				<h3 class="text-lg font-medium text-gray-700">Pre Progress</h3>
+				<h3 class="text-lg font-medium text-gray-600">Pre Progress</h3>
 				<button
-					class="text-blue-600 text-sm hover:text-blue-800 transition font-bold"
+					class="text-yellowish text-sm hover:text-yellowish2 transition font-bold"
 					on:click={togglePreProgress}
 				>
 					{showPreProgress ? 'Hide ▲' : 'Details ›'}
@@ -51,9 +51,9 @@
 
 		<div class="space-y-2">
 			<div class="flex justify-between items-center">
-				<h3 class="text-lg font-medium text-gray-700">During Progress</h3>
+				<h3 class="text-lg font-medium text-gray-600">During Progress</h3>
 				<button
-					class="text-blue-600 text-sm hover:text-blue-800 transition font-bold"
+					class="text-yellowish text-sm hover:text-yellowish2 transition font-bold"
 					on:click={toggleDuringProgress}
 				>
 					{showDuringProgress ? 'Hide ▲' : 'Details ›'}
@@ -75,9 +75,9 @@
 
 		<div class="space-y-2">
 			<div class="flex justify-between items-center">
-				<h3 class="text-lg font-medium text-gray-700">Post Progress</h3>
+				<h3 class="text-lg font-medium text-gray-600">Post Progress</h3>
 				<button
-					class="text-blue-600 text-sm hover:text-blue-800 transition font-bold"
+					class="text-yellowish text-sm hover:text-yellowish2 transition font-bold"
 					on:click={togglePostProgress}
 				>
 					{showPostProgress ? 'Hide ▲' : 'Details ›'}

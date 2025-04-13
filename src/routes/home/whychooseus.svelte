@@ -25,7 +25,7 @@
 	];
 </script>
 
-<section class="bg-gray-100 py-16 px-4 text-center flex flex-col items-center">
+<section class="bg-light-yellowish1 py-16 px-4 text-center flex flex-col items-center">
 	<h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Why Choose Us?</h2>
 	<p class="text-base md:text-lg text-gray-600 max-w-2xl mx-auto mb-12">
 		Tempor officia quis ad veniam qui voluptate adipisicing laboris mollit.
@@ -33,9 +33,9 @@
 
 	<div class="grid grid-cols-2 md:grid-cols-4 gap-8 w-full max-w-6xl">
 		{#each benefits as benefit, index}
-			<div transition:fade class="bg-white shadow-md rounded-xl p-6 text-center hover:shadow-lg transition-transform transform hover:-translate-y-1">
-				<div class="bg-blue-100 w-16 h-16 flex items-center justify-center rounded-full mx-auto mb-4">
-					<i class="{benefit.icon} text-3xl text-blue-500"></i>
+			<div transition:fade class="bg-yellowish shadow-md rounded-xl p-6 text-center hover:shadow-lg transition-transform transform hover:-translate-y-1">
+				<div class="bg-yellowish4 w-16 h-16 flex items-center justify-center rounded-full mx-auto mb-4">
+					<i class="{benefit.icon} text-3xl text-white"></i>
 				</div>
 				<h3 class="text-lg font-semibold text-gray-800">{benefit.title}</h3>
 				<p class="text-gray-600 text-sm mt-2">{benefit.description}</p>

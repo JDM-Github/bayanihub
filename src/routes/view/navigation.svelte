@@ -2,8 +2,8 @@
     export let gotoSection: (link: string) => void;
 </script>
 
-<div class="bg-white p-3 rounded-lg shadow-sm sticky top-0 z-10">
-	<nav class="flex justify-center space-x-16 text-gray-600 text-xs md:text-sm font-medium">
+<div class="bg-yellowish2 p-3 rounded-lg shadow-sm sticky top-0 z-10">
+	<nav class="flex justify-center space-x-16 text-yellowish5 text-xs md:text-sm font-medium">
 		<button
 			class="flex flex-col items-center space-y-1 group"
 			on:click={() => gotoSection('support')}

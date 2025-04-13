@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import RequestHandler from '../../../functions/request';
 
 	import { fly } from 'svelte/transition';
 	import { writable } from 'svelte/store';
@@ -9,11 +8,8 @@
 	import { getCachedImage, preloadImages } from '$lib/utils/imageCache';
 
 	let isLoading = false;
-	// let images: any[] = [];
 	let hoveredIndex = writable(-1);
 	let typedText = writable('');
-	let showImages = writable(false);
-
 	export let features: any;
 
 	onMount(async () => {
@@ -32,12 +28,14 @@
 </script>
 
 {#if isLoading || features.length === 0}
-	<div class="flex justify-center items-center h-screen">
-		<div class="animate-spin rounded-full h-16 w-16 border-t-4 border-blue-500"></div>
-	</div>
+	<section>
+		<div class="flex justify-center items-center h-screen">
+			<div class="animate-spin rounded-full h-16 w-16 border-t-4 border-yellowish4"></div>
+		</div>
+	</section>
 {:else}
 	<section
-		class="flex flex-col items-center justify-center text-center min-h-[50vh] lg:min-h-[60vh] bg-gray-100 p-8 mt-1"
+		class="flex flex-col items-center justify-center text-center min-h-[50vh] lg:min-h-[60vh] bg-gradient-to-b from-yellowish3 to-yellowish5 p-8 mt-1"
 	>
 		<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 place-items-center">
 			{#each features as image, index (index)}
@@ -57,9 +55,9 @@
 				>
 					{#await getCachedImage(image.src) then cachedImage}
 						<img
-							src={cachedImage}
+							src={""}
 							alt={image.alt}
-							class={`rounded-xl object-cover shadow-lg ${image.size} ${image.yOffset}`}
+							class={`bg-yellowish rounded-xl object-cover shadow-lg ${image.size} ${image.yOffset}`}
 						/>
 					{/await}
 
@@ -70,7 +68,7 @@
 						>
 							<p>{$typedText}</p>
 							<button
-								class="mt-2 px-3 py-1 bg-blue-500 text-white text-xs font-semibold rounded-lg shadow-md hover:bg-blue-600 transition"
+								class="mt-2 px-3 py-1 bg-yellowish3 text-white text-xs font-semibold rounded-lg shadow-md hover:bg-yellowish4 transition"
 							>
 								Read
 							</button>

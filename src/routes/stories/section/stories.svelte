@@ -2,6 +2,13 @@
 	import type { StoryInterface } from '$lib/types';
 	import Story from '../components/story.svelte';
 
+	import DonationModal from '$lib/components/modal/Donation.svelte';
+	let showModal = false;
+	function handleDonation(donorName: string, donationAmount: string, message: string) {
+		alert('Donation received:' + JSON.stringify({donorName, donationAmount, message}));
+		showModal = false;
+	}
+
 	export let stories: StoryInterface[];
 
 	let currentPage = 1;
@@ -56,7 +63,7 @@
 	}
 </script>
 
-<section class="py-12 bg-white" id="story-section">
+<section class="py-12 bg-light-yellowish" id="story-section">
 	<div class="max-w-7xl mx-auto px-4 sm:px-6">
 		<h2 class="text-2xl sm:text-3xl font-bold text-gray-800 text-center mb-8 sm:mb-10">
 			Available Fundraising Stories
@@ -64,14 +71,14 @@
 
 		<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
 			{#each paginatedStories as story}
-				<Story {story} {readMore} />
+				<Story {story} {readMore} onOpen={() => (showModal = true)} />
 			{/each}
 		</div>
 
 		<div class="flex justify-center mt-6 sm:mt-8 space-x-1 sm:space-x-2">
 			{#if currentPage > 1}
 				<button
-					class="w-7 h-7 sm:w-8 sm:h-8 flex items-center justify-center rounded-full bg-gray-200 text-gray-700 hover:bg-blue-300"
+					class="w-7 h-7 sm:w-8 sm:h-8 flex items-center justify-center rounded-full bg-yellowish text-gray-700 hover:bg-yellowish"
 					on:click={() => goToPage(currentPage - 1)}
 				>
 					&lt;
@@ -81,7 +88,7 @@
 			{#each visiblePages() as page}
 				<button
 					class="w-7 h-7 sm:w-8 sm:h-8 rounded-full text-xs sm:text-sm font-semibold transition-colors duration-200
-				{page === currentPage ? 'bg-blue-500 text-white' : 'bg-gray-200 text-gray-700 hover:bg-blue-300'}"
+				{page === currentPage ? 'bg-yellowish3 text-white' : 'bg-yellowish text-gray-700 hover:bg-yellowish2'}"
 					on:click={() => goToPage(page)}
 				>
 					{page}
@@ -90,7 +97,7 @@
 
 			{#if currentPage < totalPages}
 				<button
-					class="w-7 h-7 sm:w-8 sm:h-8 flex items-center justify-center rounded-full bg-gray-200 text-gray-700 hover:bg-blue-300"
+					class="w-7 h-7 sm:w-8 sm:h-8 flex items-center justify-center rounded-full bg-yellowish text-gray-700 hover:bg-yellowish1"
 					on:click={() => goToPage(currentPage + 1)}
 				>
 					&gt;
@@ -99,3 +106,7 @@
 		</div>
 	</div>
 </section>
+
+{#if showModal}
+	<DonationModal onClose={() => (showModal = false)} onDonate={handleDonation} />
+{/if}

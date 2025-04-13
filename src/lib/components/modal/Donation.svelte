@@ -32,7 +32,7 @@
 </script>
 
 <div class="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm">
-	<div class="bg-white rounded-lg shadow-lg w-[90%] max-w-md p-6 relative">
+	<div class="bg-yellowish rounded-lg shadow-lg w-[90%] max-w-md p-6 relative">
 		<button
 			type="button"
 			class="absolute top-3 right-3 text-gray-600 hover:text-red-500 transition"
@@ -53,7 +53,7 @@
 					bind:value={donorName}
 					required
 					placeholder="Enter your name"
-					class="w-full mt-1 p-2 border rounded-md focus:ring focus:ring-blue-300 focus:outline-none"
+					class="w-full mt-1 p-2 border rounded-md focus:ring focus:ring-transparent border-yellowish3 focus:outline-none"
 				/>
 			</div>
 
@@ -63,7 +63,7 @@
 					{#each presetAmounts as amount}
 						<button
 							type="button"
-							class={`p-2 border rounded-md text-center ${selectedAmount === amount ? 'bg-blue-600 text-white' : 'bg-gray-100 hover:bg-gray-200'}`}
+							class={`p-2 border rounded-md text-center ${selectedAmount === amount ? 'bg-yellowish3 text-white' : 'bg-yellowish1 hover:bg-yellowish2'}`}
 							on:click={() => handlePresetSelect(amount)}
 						>
 							₱{amount}
@@ -71,7 +71,7 @@
 					{/each}
 					<button
 						type="button"
-						class={`p-2 border rounded-md text-center ${selectedAmount === '' ? 'bg-blue-600 text-white' : 'bg-gray-100 hover:bg-gray-200'}`}
+						class={`p-2 border rounded-md text-center ${selectedAmount === '' ? 'bg-yellowish3 text-white' : 'bg-yellowish1 hover:bg-yellowish2'}`}
 						on:click={() => handlePresetSelect('')}
 					>
 						Other
@@ -86,7 +86,7 @@
 							bind:value={customAmount}
 							placeholder="Enter custom amount"
 							on:input={handleCustomInput}
-							class="w-full p-2 border rounded-md focus:ring focus:ring-blue-300 focus:outline-none"
+							class="w-full p-2 border rounded-md focus:ring focus:ring-transparent focus:outline-none border-yellowish3"
 						/>
 						<p class="text-xs text-gray-500 mt-1">Minimum donation amount: ₱1</p>
 					</div>
@@ -102,7 +102,7 @@
 					bind:value={message}
 					rows="3"
 					placeholder="Leave a message for the cause"
-					class="w-full mt-1 p-2 border rounded-md focus:ring focus:ring-blue-300 focus:outline-none"
+					class="w-full mt-1 p-2 border rounded-md focus:ring focus:ring-transparent focus:outline-none border-yellowish3"
 				></textarea>
 			</div>
 
@@ -116,7 +116,7 @@
 				</button>
 				<button
 					type="submit"
-					class="px-4 py-2 bg-blue-600 text-white font-medium rounded-md hover:bg-blue-700 transition"
+					class="px-4 py-2 bg-yellowish3 text-white font-medium rounded-md hover:bg-yellowish4 transition"
 				>
 					Donate Now
 				</button>

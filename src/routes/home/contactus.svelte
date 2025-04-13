@@ -11,7 +11,7 @@
     }
 </script>
 
-<section class="bg-white py-16 px-6">
+<section class="bg-light-yellowish1 py-16 px-6">
     <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">        
 
         <div class="sm:px-8">
@@ -22,15 +22,15 @@
 
             <div class="mb-6 text-gray-700 space-y-4">
                 <div class="flex items-center space-x-3">
-                    <i class="fas fa-phone-alt text-blue-500 text-lg md:text-xl"></i>
+                    <i class="fas fa-phone-alt text-yellowish4 text-lg md:text-xl"></i>
                     <p class="text-sm md:text-lg font-medium">+6391234567890</p>
                 </div>
                 <div class="flex items-center space-x-3">
-                    <i class="fas fa-envelope text-blue-500 text-lg md:text-xl"></i>
+                    <i class="fas fa-envelope text-yellowish4 text-lg md:text-xl"></i>
                     <p class="text-sm md:text-lg font-medium">tspteam@gmail.com</p>
                 </div>
                 <div class="flex items-center space-x-3">
-                    <i class="fas fa-map-marker-alt text-blue-500 text-lg md:text-xl"></i>
+                    <i class="fas fa-map-marker-alt text-yellowish4 text-lg md:text-xl"></i>
                     <p class="text-sm md:text-lg font-medium">123 Location Location</p>
                 </div>
             </div>
@@ -41,27 +41,27 @@
                     <input 
                         type="text" 
                         placeholder="Your Name" 
-                        class="border border-gray-300 rounded-lg p-2 md:p-3 w-full focus:ring focus:ring-blue-300 text-sm md:text-base"
+                        class="border border-yellowish4 rounded-lg p-2 md:p-3 w-full focus:ring focus:ring-transparent text-sm md:text-base"
                         bind:value={formData.name}
                         required
                     />
                     <input 
                         type="email" 
                         placeholder="Your Email" 
-                        class="border border-gray-300 rounded-lg p-2 md:p-3 w-full focus:ring focus:ring-blue-300 text-sm md:text-base"
+                        class="border border-yellowish4 rounded-lg p-2 md:p-3 w-full focus:ring focus:ring-transparent text-sm md:text-base"
                         bind:value={formData.email}
                         required
                     />
                     <textarea 
                         placeholder="Your Message" 
                         rows="4"
-                        class="border border-gray-300 rounded-lg p-2 md:p-3 w-full focus:ring focus:ring-blue-300 text-sm md:text-base"
+                        class="border border-yellowish4 rounded-lg p-2 md:p-3 w-full focus:ring focus:ring-transparent text-sm md:text-base"
                         bind:value={formData.message}
                         required
                     ></textarea>
                     <button 
                         type="submit" 
-                        class="bg-blue-500 text-white font-semibold py-2 md:py-3 rounded-lg shadow-md hover:bg-blue-600 transition text-sm md:text-base"
+                        class="bg-yellowish4 text-white font-semibold py-2 md:py-3 rounded-lg shadow-md hover:bg-yellowish5 transition text-sm md:text-base"
                     >
                         Send Message
                     </button>

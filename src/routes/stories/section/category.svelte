@@ -20,7 +20,7 @@
 <!-- ----------------------------------------------------------------- -->
 <!-- SECTION -->
 <!-- ----------------------------------------------------------------- -->
-<section class="py-4 bg-gray-100">
+<section class="py-4 bg-yellowish2">
     <div class="max-w-7xl mx-auto px-6 text-center">
         <div class="flex overflow-x-auto w-full sm:grid sm:grid-cols-5 md:grid-cols-6 lg:grid-cols-8 gap-6 justify-start scrollbar-hide">
             {#each categories as category}

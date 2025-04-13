@@ -10,7 +10,7 @@
 <!-- ----------------------------------------------------------------- -->
 <!-- SECTION -->
 <!-- ----------------------------------------------------------------- -->
-<section class="py-8 bg-green-600 text-white text-center">
+<section class="py-8 bg-white text-yellowish4 text-center">
     <div class="max-w-3xl mx-auto px-4">
         <h2 class="text-2xl font-bold">Thank You to Our Amazing Donors!</h2>
         <p class="mt-1 text-base">Your generosity is making a real impact. Together, we’re changing lives.</p>

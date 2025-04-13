@@ -7,7 +7,8 @@
 	import Progress from '../progress.svelte';
 	import Footer from '../../../lib/components/Footer.svelte';
 	import { onMount } from 'svelte';
-	import DonationModal from '$lib/modal/Donation.svelte';
+	import DonationModal from '$lib/components/modal/Donation.svelte';
+	import DonationSheet from '$lib/components/modal/DonationSheet.svelte';
 
 	// IMPORT TYPE
 	import type { StoryInterface } from '$lib/types';
@@ -16,10 +17,12 @@
 	export let data;
 
 	let showModal = false;
+	let showDonationSheet = false;
 	function handleDonation(donorName: string, donationAmount: string, message: string) {
 		alert('Donation received:' + JSON.stringify({donorName, donationAmount, message}));
 		showModal = false;
 	}
+	
 	let story: StoryInterface = data.story;
 	let progressWidth = 0;
 	let fullScreenImage: any = null;
@@ -78,7 +81,7 @@
 				class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6"
 			>
 				<div>
-					<span class="bg-blue-600 text-white text-sm px-4 py-1 rounded-full">{story.category}</span
+					<span class="bg-yellowish3  text-white text-sm px-4 py-1 rounded-full">{story.category}</span
 					>
 					<h1 class="text-xl md:text-2xl lg:text-4xl font-bold text-white mt-2 drop-shadow-lg">
 						{story.title}
@@ -89,9 +92,9 @@
 
 		<div class="lg:col-span-2 md:col-span-3 space-y-2">
 			<Navigation gotoSection={gotoSection}/>
-			<Support story={story} progressWidth={progressWidth} showModal={showModal}/>
+			<Support story={story} progressWidth={progressWidth} openModal={() => (showModal = true)}/>
 
-			<div class="bg-white p-4 md:p-6 rounded-lg shadow-md" id="story">
+			<div class="bg-yellowish1 p-4 md:p-6 rounded-lg shadow-md" id="story">
 				<h2 class="text-lg md:text-2xl font-semibold text-gray-800 mb-3 md:mb-4">
 					What is the Story Behind This?
 				</h2>
@@ -120,7 +123,7 @@
 		</div>
 
 		<div class="md:col-span-1 space-y-6">
-			<TopDonor {story} />
+			<TopDonor {story} openModal={() => (showDonationSheet = true)} />
 			<Testimonial {story} />
 		</div>
 	</section>
@@ -152,6 +155,11 @@
 
 {#if showModal}
 	<DonationModal onClose={() => (showModal = false)} onDonate={handleDonation} />
+{/if}
+
+
+{#if showDonationSheet}
+	<DonationSheet onClose={() => (showDonationSheet = false)} />
 {/if}
 
 <Footer />

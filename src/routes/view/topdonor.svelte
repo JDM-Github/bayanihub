@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
     import { onMount } from 'svelte';
     
     let showTopDonors = false;
@@ -9,17 +9,18 @@
         }, 100);
     });
 
-    export let story;
+    export let story: any;
+    export let openModal: any;
 </script>
 
 <div 
-    class="bg-white p-4 rounded-lg shadow-md"
+    class="bg-yellowish3 p-4 rounded-lg shadow-md"
 >
     <h3 class="text-lg font-semibold text-gray-800 mb-3">🌟 Top Donors 🌟</h3>
     <ul class="space-y-2">
         {#each story.donors.slice(0, 3) as donor, i}
             <li 
-                class="flex justify-between items-center bg-gray-50 p-3 rounded-md shadow-sm transform transition-all duration-500 ease-in-out"
+                class="flex justify-between items-center bg-yellowish p-3 rounded-md shadow-sm transform transition-all duration-500 ease-in-out"
                 style="transition-delay: {i * 200}ms;" 
                 class:translate-x-0={showTopDonors} class:-translate-x-10={!showTopDonors}
             >
@@ -29,14 +30,14 @@
         {/each}
     </ul>
 
-    <a 
-        href="/all-donations" 
-        class="block w-full text-center mt-4 bg-blue-600 text-white font-semibold py-2 rounded-lg shadow-md hover:bg-blue-700 transition"
+    <button
+        class="block w-full text-center mt-4 bg-yellowish2 text-yellowish5 font-semibold py-2 rounded-lg shadow-md hover:bg-yellowish transition"
+        on:click={openModal}
     >
         See More Donations
-    </a>
+    </button>
 
     <p class="text-center text-gray-600 mt-3 text-sm">
-        Want to see your name here? <span class="text-blue-600 font-semibold cursor-pointer">Donate now!</span>
+        Want to see your name here? <span class="text-yellowish font-yellowish5 cursor-pointer">Donate now!</span>
     </p>
 </div>

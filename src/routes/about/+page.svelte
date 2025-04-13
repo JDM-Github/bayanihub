@@ -5,7 +5,7 @@
 </script>
 
 <main>
-	<div class="bg-gray-50 text-gray-800">
+	<div class="bg-yellowish2 text-gray-800">
 		<div class="relative h-64 md:h-96 overflow-hidden">
 			<img
 				src="https://via.placeholder.com/1920x600"
@@ -24,7 +24,6 @@
 
 		<div class="container mx-auto py-12 space-y-12 px-8 lg:px-32">
 			<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-				<!-- Mission Image (fixed size) -->
 				<div class="flex justify-center">
 					<img
 						src={mission}
@@ -33,7 +32,6 @@
 					/>
 				</div>
 
-				<!-- Mission Text (top-aligned) -->
 				<div class="space-y-3">
 					<h2 class="text-xl md:text-2xl font-semibold">Our Mission</h2>
 					<p class="text-gray-600 leading-relaxed text-sm md:text-base">
@@ -65,9 +63,9 @@
 			</div>
 		</div>
 
-		<hr class="border-gray-300 my-8" />
+		<hr class="border-yellowish my-8" />
 
-		<div class="container mx-auto text-center py-12 space-y-6 px-4 md:px-8">
+		<div class="container mx-auto text-center py-12 space-y-6 px-4 md:px-8 ">
 			<h2 class="text-3xl font-bold">Who We Are</h2>
 			<p class="text-gray-600 max-w-3xl mx-auto leading-relaxed">
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer facilisis fermentum enim at
@@ -80,7 +78,7 @@
 					<img
 						src="https://via.placeholder.com/100"
 						alt="Team Member"
-						class="w-20 h-20 rounded-full border border-gray-300 shadow"
+						class="w-20 h-20 rounded-full border border-gray-300 bg-yellowish shadow"
 					/>
 					<div class="text-center">
 						<p class="font-medium text-gray-800">Id ad enim</p>
@@ -91,7 +89,7 @@
 					<img
 						src="https://via.placeholder.com/100"
 						alt="Team Member"
-						class="w-20 h-20 rounded-full border border-gray-300 shadow"
+						class="w-20 h-20 rounded-full border border-gray-300 bg-yellowish shadow"
 					/>
 					<div class="text-center">
 						<p class="font-medium text-gray-800">JDM</p>
@@ -102,7 +100,7 @@
 					<img
 						src="https://via.placeholder.com/100"
 						alt="Team Member"
-						class="w-20 h-20 rounded-full border border-gray-300 shadow"
+						class="w-20 h-20 rounded-full border border-gray-300 bg-yellowish shadow"
 					/>
 					<div class="text-center">
 						<p class="font-medium text-gray-800">Lorem Ipsum</p>
@@ -113,7 +111,7 @@
 					<img
 						src="https://via.placeholder.com/100"
 						alt="Team Member"
-						class="w-20 h-20 rounded-full border border-gray-300 shadow"
+						class="w-20 h-20 rounded-full border border-gray-300 bg-yellowish shadow"
 					/>
 					<div class="text-center">
 						<p class="font-medium text-gray-800">Dolor Sit</p>

@@ -7,10 +7,17 @@
 }
 
 @theme {
-    --color-color-a: #fdeefc;
-    --color-color-b: #ffd8a9;
-    --color-color-c: #f1a661;
-    --color-color-d: #e38b29;
+    --color-yellowish: #fdeefc;
+    --color-yellowish1: #deba8e;
+    --color-yellowish2: #ffd8a9;
+    --color-yellowish3: #f1a661;
+    --color-yellowish4: #e38b29;
+    --color-yellowish5: #965914;
+    --color-yellowish9: #4a2a06;
+
+    --color-light-yellowish: #ffe0ba;
+    --color-light-yellowish1: #fad2a2;
+
 }
 
 * {
@@ -19,4 +26,5 @@
 
 body {
     overflow-x: hidden;
+    background-color: #fdeefc;
 }

@@ -2,7 +2,7 @@
 	let currentYear = new Date().getFullYear();
 </script>
 
-<footer class="bg-gray-900 text-gray-300 py-12">
+<footer class="bg-yellowish9 text-gray-300 py-12">
 	<div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
 		<!-- Company Info -->
 		<div>
@@ -21,9 +21,9 @@
 		<div class="hidden md:inline-block lg:inline-block">
 			<h3 class="text-lg font-semibold text-white mb-3">Navigation</h3>
 			<ul class="space-y-2">
-				<li><a href="/" class="hover:text-blue-400 transition">Home</a></li>
-				<li><a href="/campaigns" class="hover:text-blue-400 transition">Stories</a></li>
-				<li><a href="/about" class="hover:text-blue-400 transition">About Us</a></li>
+				<li><a href="/" class="hover:text-yellowish2 transition">Home</a></li>
+				<li><a href="/campaigns" class="hover:text-yellowish2 transition">Stories</a></li>
+				<li><a href="/about" class="hover:text-yellowish2 transition">About Us</a></li>
 			</ul>
 		</div>
 
@@ -31,10 +31,10 @@
 		<div class="hidden md:inline-block lg:inline-block">
 			<h3 class="text-lg font-semibold text-white mb-3">Quick Links</h3>
 			<ul class="space-y-2">
-				<li><a href="/faq" class="hover:text-blue-400 transition">FAQs</a></li>
-				<li><a href="/support" class="hover:text-blue-400 transition">Support</a></li>
-				<li><a href="/terms" class="hover:text-blue-400 transition">Terms of Service</a></li>
-				<li><a href="/privacy" class="hover:text-blue-400 transition">Privacy Policy</a></li>
+				<li><a href="/faq" class="hover:text-yellowish2 transition">FAQs</a></li>
+				<li><a href="/support" class="hover:text-yellowish2 transition">Support</a></li>
+				<li><a href="/terms" class="hover:text-yellowish2 transition">Terms of Service</a></li>
+				<li><a href="/privacy" class="hover:text-yellowish2 transition">Privacy Policy</a></li>
 			</ul>
 		</div>
 
@@ -42,16 +42,16 @@
 		<div class="hidden md:inline-block lg:inline-block">
 			<h3 class="text-lg font-semibold text-white mb-3">Follow Us</h3>
 			<div class="flex space-x-4">
-				<a href="#" aria-label="Facebook" class="text-xl hover:text-blue-400 transition">
+				<a href="#" aria-label="Facebook" class="text-xl hover:text-yellowish2 transition">
 					<i class="fab fa-facebook-f"></i>
 				</a>
-				<a href="#" aria-label="Twitter" class="text-xl hover:text-blue-400 transition">
+				<a href="#" aria-label="Twitter" class="text-xl hover:text-yellowish2 transition">
 					<i class="fab fa-twitter"></i>
 				</a>
-				<a href="#" aria-label="Instagram" class="text-xl hover:text-blue-400 transition">
+				<a href="#" aria-label="Instagram" class="text-xl hover:text-yellowish2 transition">
 					<i class="fab fa-instagram"></i>
 				</a>
-				<a href="#" aria-label="LinkedIn" class="text-xl hover:text-blue-400 transition">
+				<a href="#" aria-label="LinkedIn" class="text-xl hover:text-yellowish2 transition">
 					<i class="fab fa-linkedin"></i>
 				</a>
 			</div>
@@ -62,9 +62,9 @@
 			<div>
 				<h3 class="text-lg font-semibold text-white mb-3">Navigation</h3>
 				<ul class="space-y-2">
-					<li><a href="/" class="hover:text-blue-400 transition">Home</a></li>
-					<li><a href="/campaigns" class="hover:text-blue-400 transition">Stories</a></li>
-					<li><a href="/about" class="hover:text-blue-400 transition">About Us</a></li>
+					<li><a href="/" class="hover:text-yellowish2 transition">Home</a></li>
+					<li><a href="/campaigns" class="hover:text-yellowish2 transition">Stories</a></li>
+					<li><a href="/about" class="hover:text-yellowish2 transition">About Us</a></li>
 				</ul>
 			</div>
 
@@ -72,10 +72,10 @@
 			<div>
 				<h3 class="text-lg font-semibold text-white mb-3">Quick Links</h3>
 				<ul class="space-y-2">
-					<li><a href="/faq" class="hover:text-blue-400 transition">FAQs</a></li>
-					<li><a href="/support" class="hover:text-blue-400 transition">Support</a></li>
-					<li><a href="/terms" class="hover:text-blue-400 transition">Terms of Service</a></li>
-					<li><a href="/privacy" class="hover:text-blue-400 transition">Privacy Policy</a></li>
+					<li><a href="/faq" class="hover:text-yellowish2 transition">FAQs</a></li>
+					<li><a href="/support" class="hover:text-yellowish2 transition">Support</a></li>
+					<li><a href="/terms" class="hover:text-yellowish2 transition">Terms of Service</a></li>
+					<li><a href="/privacy" class="hover:text-yellowish2 transition">Privacy Policy</a></li>
 				</ul>
 			</div>
 
@@ -83,16 +83,16 @@
 			<div>
 				<h3 class="text-lg font-semibold text-white mb-3">Follow Us</h3>
 				<div class="flex space-x-4">
-					<a href="#" aria-label="Facebook" class="text-xl hover:text-blue-400 transition">
+					<a href="#" aria-label="Facebook" class="text-xl hover:text-yellowish2 transition">
 						<i class="fab fa-facebook-f"></i>
 					</a>
-					<a href="#" aria-label="Twitter" class="text-xl hover:text-blue-400 transition">
+					<a href="#" aria-label="Twitter" class="text-xl hover:text-yellowish2 transition">
 						<i class="fab fa-twitter"></i>
 					</a>
-					<a href="#" aria-label="Instagram" class="text-xl hover:text-blue-400 transition">
+					<a href="#" aria-label="Instagram" class="text-xl hover:text-yellowish2 transition">
 						<i class="fab fa-instagram"></i>
 					</a>
-					<a href="#" aria-label="LinkedIn" class="text-xl hover:text-blue-400 transition">
+					<a href="#" aria-label="LinkedIn" class="text-xl hover:text-yellowish2 transition">
 						<i class="fab fa-linkedin"></i>
 					</a>
 				</div>
@@ -101,7 +101,7 @@
 	</div>
 
 	<!-- Bottom Bar -->
-	<div class="border-t border-gray-700 mt-8 pt-6 text-center text-sm">
+	<div class="border-t border-yellowish4 mt-8 pt-6 text-center text-sm">
 		<p>© {currentYear} Fund. All Rights Reserved.</p>
 	</div>
 </footer>
